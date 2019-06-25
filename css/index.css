@@ -27,7 +27,13 @@ footer {
     overflow: hidden;
     position: relative;
 }
-img {
+.infinity-slider img {
     width: 350px;
     height: 600px;
+    position: absolute;
+    opacity: 1;
+    transition: all ease 1s;
+}
+.infinity-slider .opacity0 {
+    opacity: 0;
 }

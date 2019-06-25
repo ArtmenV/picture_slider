@@ -1,15 +1,12 @@
-window.onload = function() {
-    document.querySelector('.triangle').onclick = 
-    function() {
-        document.querySelector('.description').classList.toggle('hide');
-        let desctiptionClasses = document.querySelector('.description').classList;
-        let classArray = Array.from(desctiptionClasses);
+let images = document.querySelectorAll('.infinity-slider img');
+let current= 0;
 
-        if(classArray.indexOf('hide') != 1) {
-            document.querySelector('.triangle').style.backgroundImage = 'url("../img/button.png")';
-        }
-        else {
-            document.querySelector('.triangle').style.backgroundImage  = 'url("../img/arrow_up.png")';
-        }
+function slider() {
+    for(let i = 0; i< images.length; i++) {
+        images[i].classList.add('opacity0');
     }
+    images[current].classList.remove('opacity0');
 }
+
+
+document.querySelector('.infinity-slider').onclick = slider;
