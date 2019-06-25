@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+}
+body {
+    font-family: Arial;
+}
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    padding: 40px 0;
+    color: silver;
+
+}
+
+.infinity-slider-wrap {
+    border: 1px solid black;
+    width: 350px;
+    height: 600px;
+    margin: 50px auto;
+    position: relative;
+}
+.infinity-slider {
+    width: 350px;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+}
+img {
+    width: 350px;
+    height: 600px;
+}
