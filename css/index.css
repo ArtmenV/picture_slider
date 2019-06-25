@@ -37,3 +37,16 @@ footer {
 .infinity-slider .opacity0 {
     opacity: 0;
 }
+
+.btn-infinity-up, .btn-infinity-down {
+    width: 36px;
+    height: 36px;
+    background: url('../img/up.svg');
+    background-size: contain;
+}
+
+.btn-infinity-down {
+    background: url('../img/down.svg');
+    background-size: contain;
+
+}

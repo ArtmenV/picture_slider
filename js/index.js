@@ -8,14 +8,19 @@ function slider() {
     }
     images[current].classList.remove('opacity0');
     // current++;
-    if(current+1 == images.length) {
-     current = 0;
-    } 
-    else {
-     current++;
-    }
+    
 }
 
-document.querySelector('.infinity-slider').onclick = slider;
+// document.querySelector('.infinity-slider').onclick = slider;
+document.querySelector('.btn-infinity-up').onclick = function(){
+    if(current - 1 == - 1) {
+        current = images.length - 1;
+       } 
+       else {
+        current--;
+       }
+       slider();
+}
+document.querySelector('.btn-infinity-down').onclick = slider;
 
 
