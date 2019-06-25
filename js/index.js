@@ -7,11 +7,9 @@ function slider() {
         images[i].classList.add('opacity0');
     }
     images[current].classList.remove('opacity0');
-    // current++;
-    
 }
+ slider();
 
-// document.querySelector('.infinity-slider').onclick = slider;
 document.querySelector('.btn-infinity-up').onclick = function(){
     if(current - 1 == - 1) {
         current = images.length - 1;
@@ -21,6 +19,14 @@ document.querySelector('.btn-infinity-up').onclick = function(){
        }
        slider();
 }
-document.querySelector('.btn-infinity-down').onclick = slider;
+document.querySelector('.btn-infinity-down').onclick = function(){
+    if(current + 1 == images.length) {
+        current =0;
+       } 
+       else {
+        current++;
+       }
+       slider();
+}
 
 
